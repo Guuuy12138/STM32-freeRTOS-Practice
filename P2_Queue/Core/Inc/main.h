@@ -57,8 +57,8 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define Kye_Pin GPIO_PIN_12
-#define Kye_GPIO_Port GPIOB
+#define Key1_Pin GPIO_PIN_12
+#define Key1_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

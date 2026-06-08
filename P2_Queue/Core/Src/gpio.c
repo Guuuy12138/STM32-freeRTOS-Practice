@@ -48,11 +48,11 @@ void MX_GPIO_Init(void)
   __HAL_RCC_GPIOA_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
-  /*Configure GPIO pin : Kye_Pin */
-  GPIO_InitStruct.Pin = Kye_Pin;
+  /*Configure GPIO pin : Key1_Pin */
+  GPIO_InitStruct.Pin = Key1_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(Kye_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(Key1_GPIO_Port, &GPIO_InitStruct);
 
 }
 
