@@ -67,8 +67,8 @@ const osThreadAttr_t DataTask_attributes = {
 
 /* USER CODE END FunctionPrototypes */
 
-void StartDefaultTask(void *argument);
-void StartTask02(void *argument);
+void StartbuttonTask(void *argument);
+void StartDataTask(void *argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -100,10 +100,10 @@ void MX_FREERTOS_Init(void) {
 
   /* Create the thread(s) */
   /* creation of buttonTask */
-  buttonTaskHandle = osThreadNew(StartDefaultTask, NULL, &buttonTask_attributes);
+  buttonTaskHandle = osThreadNew(StartbuttonTask, NULL, &buttonTask_attributes);
 
   /* creation of DataTask */
-  DataTaskHandle = osThreadNew(StartTask02, NULL, &DataTask_attributes);
+  DataTaskHandle = osThreadNew(StartDataTask, NULL, &DataTask_attributes);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
@@ -115,40 +115,40 @@ void MX_FREERTOS_Init(void) {
 
 }
 
-/* USER CODE BEGIN Header_StartDefaultTask */
+/* USER CODE BEGIN Header_StartbuttonTask */
 /**
   * @brief  Function implementing the buttonTask thread.
   * @param  argument: Not used
   * @retval None
   */
-/* USER CODE END Header_StartDefaultTask */
-void StartDefaultTask(void *argument)
+/* USER CODE END Header_StartbuttonTask */
+void StartbuttonTask(void *argument)
 {
-  /* USER CODE BEGIN StartDefaultTask */
+  /* USER CODE BEGIN StartbuttonTask */
   /* Infinite loop */
   for(;;)
   {
     osDelay(1);
   }
-  /* USER CODE END StartDefaultTask */
+  /* USER CODE END StartbuttonTask */
 }
 
-/* USER CODE BEGIN Header_StartTask02 */
+/* USER CODE BEGIN Header_StartDataTask */
 /**
 * @brief Function implementing the DataTask thread.
 * @param argument: Not used
 * @retval None
 */
-/* USER CODE END Header_StartTask02 */
-void StartTask02(void *argument)
+/* USER CODE END Header_StartDataTask */
+void StartDataTask(void *argument)
 {
-  /* USER CODE BEGIN StartTask02 */
+  /* USER CODE BEGIN StartDataTask */
   /* Infinite loop */
   for(;;)
   {
     osDelay(1);
   }
-  /* USER CODE END StartTask02 */
+  /* USER CODE END StartDataTask */
 }
 
 /* Private application code --------------------------------------------------*/
