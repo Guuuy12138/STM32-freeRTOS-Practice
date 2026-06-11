@@ -91,7 +91,7 @@ int main(void)
   MX_GPIO_Init();
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
-
+  UART2_Receive_Start();
   /* USER CODE END 2 */
 
   /* Init scheduler */

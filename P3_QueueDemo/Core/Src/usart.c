@@ -118,14 +118,18 @@ void HAL_UART_MspDeInit(UART_HandleTypeDef* uartHandle)
 }
 
 /* USER CODE BEGIN 1 */
-uint8_t rxData;
+uint8_t rxData;//接收数据缓存
+
+//第一次启动接收数据时调用此函数
 void UART2_Receive_Start() {
-  HAL_UART_Receive_IT(&huart2, &rxData, 1);
+  HAL_UART_Receive_IT(&huart2, &rxData, 1);//启动接收中断将接收到的数据存放在 rxData 中
 }
+
+//重新定义串口接收中断函数
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
   if (huart == &huart2) {
-    osMessageQueuePut(CommandQueueHandle, &rxData, 0, 0);
-    HAL_UART_Receive_IT(&huart2, &rxData, 1);
+    osMessageQueuePut(CommandQueueHandle, &rxData, 0, 0);//将接收到的消息(存放在rxData)放到队列中
+    HAL_UART_Receive_IT(&huart2, &rxData, 1);//再次启动接收中断将接收到的数据存放在 rxData 中
   }
 }
 /* USER CODE END 1 */

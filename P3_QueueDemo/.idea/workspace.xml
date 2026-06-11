@@ -34,12 +34,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="daba8c34-91b9-422b-8f08-37cb5e1ace5f" name="更改" comment="按键控制红色 LED 亮灭">
+      <change afterPath="$PROJECT_DIR$/Core/App/Task/CommandTask.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mxproject" beforeDir="false" afterPath="$PROJECT_DIR$/.mxproject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Inc/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/main.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/freertos.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/freertos.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/usart.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/usart.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/usart.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/usart.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/P3_QueueDemo.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/P3_QueueDemo.ioc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,8 +137,8 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="CMake 应用程序.FreeRTOS" />
       <item itemvalue="CMake 应用程序.P3_QueueDemo" />
+      <item itemvalue="CMake 应用程序.FreeRTOS" />
       <item itemvalue="CMake 应用程序.STM32_Drivers" />
       <item itemvalue="OpenOCD 下载并运行.P3_QueueDemo" />
     </list>
@@ -154,7 +154,8 @@
       <workItem from="1781181333664" duration="109000" />
       <workItem from="1781181494354" duration="395000" />
       <workItem from="1781181919148" duration="526000" />
-      <workItem from="1781191016496" duration="8000" />
+      <workItem from="1781191016496" duration="2554000" />
+      <workItem from="1781193602679" duration="4559000" />
     </task>
     <task id="LOCAL-00001" summary="按键控制红色 LED 亮灭">
       <option name="closed" value="true" />
@@ -172,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1781181521263</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="按键控制红色 LED 亮灭">
+      <option name="closed" value="true" />
+      <created>1781191039764</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1781191039764</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

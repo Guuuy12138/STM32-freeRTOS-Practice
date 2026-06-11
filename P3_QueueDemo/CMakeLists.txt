@@ -33,8 +33,8 @@ enable_language(C ASM)
 
 # Create an executable object type
 add_executable(${CMAKE_PROJECT_NAME}
-        Core/App/Task/LEDTask.c
-        Core/App/Task/KeyTask.c)
+
+)
 
 # Add STM32CubeMX generated sources
 add_subdirectory(cmake/stm32cubemx)
@@ -47,6 +47,9 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
 # Add sources to executable
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user sources here
+    Core/App/Task/LEDTask.c
+    Core/App/Task/KeyTask.c
+    Core/App/Task/CommandTask.c
 )
 
 # Add include paths
