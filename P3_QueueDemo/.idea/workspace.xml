@@ -33,14 +33,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="daba8c34-91b9-422b-8f08-37cb5e1ace5f" name="更改" comment="按键控制红色 LED 亮灭">
-      <change afterPath="$PROJECT_DIR$/Core/App/Task/CommandTask.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Inc/usart.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/usart.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/usart.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/usart.c" afterDir="false" />
-    </list>
+    <list default="true" id="daba8c34-91b9-422b-8f08-37cb5e1ace5f" name="更改" comment="加上了串口处理数据" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -155,7 +148,7 @@
       <workItem from="1781181494354" duration="395000" />
       <workItem from="1781181919148" duration="526000" />
       <workItem from="1781191016496" duration="2554000" />
-      <workItem from="1781193602679" duration="4559000" />
+      <workItem from="1781193602679" duration="4618000" />
     </task>
     <task id="LOCAL-00001" summary="按键控制红色 LED 亮灭">
       <option name="closed" value="true" />
@@ -181,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1781191039764</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="加上了串口处理数据">
+      <option name="closed" value="true" />
+      <created>1781199432357</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1781199432357</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,6 +196,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="按键控制红色 LED 亮灭" />
-    <option name="LAST_COMMIT_MESSAGE" value="按键控制红色 LED 亮灭" />
+    <MESSAGE value="加上了串口处理数据" />
+    <option name="LAST_COMMIT_MESSAGE" value="加上了串口处理数据" />
   </component>
 </project>
