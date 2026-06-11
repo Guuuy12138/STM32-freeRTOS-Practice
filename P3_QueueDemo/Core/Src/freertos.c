@@ -61,10 +61,22 @@ const osThreadAttr_t LEDTask_attributes = {
   .stack_size = 128 * 4,
   .priority = (osPriority_t) osPriorityNormal,
 };
+/* Definitions for CommandTask */
+osThreadId_t CommandTaskHandle;
+const osThreadAttr_t CommandTask_attributes = {
+  .name = "CommandTask",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityHigh1,
+};
 /* Definitions for LEDQueue */
 osMessageQueueId_t LEDQueueHandle;
 const osMessageQueueAttr_t LEDQueue_attributes = {
   .name = "LEDQueue"
+};
+/* Definitions for CommandQueue */
+osMessageQueueId_t CommandQueueHandle;
+const osMessageQueueAttr_t CommandQueue_attributes = {
+  .name = "CommandQueue"
 };
 
 /* Private function prototypes -----------------------------------------------*/
@@ -74,6 +86,7 @@ const osMessageQueueAttr_t LEDQueue_attributes = {
 
 void StartKeyTask(void *argument);
 extern void StartLEDTask(void *argument);
+extern void StartCommandTask(void *argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -103,6 +116,9 @@ void MX_FREERTOS_Init(void) {
   /* creation of LEDQueue */
   LEDQueueHandle = osMessageQueueNew (16, sizeof(LEDMessage*), &LEDQueue_attributes);
 
+  /* creation of CommandQueue */
+  CommandQueueHandle = osMessageQueueNew (16, sizeof(uint8_t), &CommandQueue_attributes);
+
   /* USER CODE BEGIN RTOS_QUEUES */
   /* add queues, ... */
   /* USER CODE END RTOS_QUEUES */
@@ -113,6 +129,9 @@ void MX_FREERTOS_Init(void) {
 
   /* creation of LEDTask */
   LEDTaskHandle = osThreadNew(StartLEDTask, NULL, &LEDTask_attributes);
+
+  /* creation of CommandTask */
+  CommandTaskHandle = osThreadNew(StartCommandTask, NULL, &CommandTask_attributes);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */

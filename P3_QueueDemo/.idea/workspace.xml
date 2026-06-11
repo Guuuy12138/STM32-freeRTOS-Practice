@@ -34,7 +34,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="daba8c34-91b9-422b-8f08-37cb5e1ace5f" name="更改" comment="按键控制红色 LED 亮灭">
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mxproject" beforeDir="false" afterPath="$PROJECT_DIR$/.mxproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/main.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/freertos.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/freertos.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/usart.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/usart.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/P3_QueueDemo.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/P3_QueueDemo.ioc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +152,9 @@
       <updated>1781161863754</updated>
       <workItem from="1781161865750" duration="5732000" />
       <workItem from="1781181333664" duration="109000" />
-      <workItem from="1781181494354" duration="9000" />
+      <workItem from="1781181494354" duration="395000" />
+      <workItem from="1781181919148" duration="526000" />
+      <workItem from="1781191016496" duration="8000" />
     </task>
     <task id="LOCAL-00001" summary="按键控制红色 LED 亮灭">
       <option name="closed" value="true" />
@@ -157,7 +164,15 @@
       <option name="project" value="LOCAL" />
       <updated>1781181204034</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="按键控制红色 LED 亮灭">
+      <option name="closed" value="true" />
+      <created>1781181521263</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1781181521263</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
