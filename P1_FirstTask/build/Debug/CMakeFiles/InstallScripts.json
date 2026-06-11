@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/EIE/ST/Porject-freeRTOS/P1_FirstTask/build/Debug/cmake_install.cmake",
+		"D:/EIE/ST/Porject-freeRTOS/P1_FirstTask/build/Debug/cmake/stm32cubemx/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
